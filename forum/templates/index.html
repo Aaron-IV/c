@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форум</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <h1 style="font-size:2.5rem;color:#1877f2;font-weight:800;margin:0;letter-spacing:-1px;"><a href="/" style="color:inherit;text-decoration:none;">Форум</a></h1>
+            </div>
+            <div class="header-right" id="auth-buttons"></div>
+        </div>
+        <div class="main-content">
+            <div class="sidebar">
+                <h3>Категории</h3>
+                <ul id="categories-list">
+                    <li><a href="#" onclick="loadPosts()">Все посты</a></li>
+                </ul>
+                <div id="user-filters"></div>
+            </div>
+            <div class="content">
+                <div id="posts-container">
+                    <div class="loading">Загрузка постов...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Модальные окна -->
+    <div id="loginModal" class="modal"></div>
+    <div id="registerModal" class="modal"></div>
+    <div id="createPostModal" class="modal"></div>
+    <script src="/static/app.js"></script>
+</body>
+</html> 
